@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139955842-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139955842-1');
+</script>
+        <meta charset="UTF-8">
+        <title>The day I was born</title>
+        <link rel='shortcut icon' type='image/x-icon' href=images/favicon.ico />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <div id="mainContainer">
+
+            <div id="header">
+                <a href="index.html" target="_self"><img src="images/logo-white.png" alt="The Day I Was Born"></a>
+            </div>
+
+            <div id="container">
+                <div id="userInput">
+
+                    <div id="announcement">
+                        <h2>What happened on the day you were born?</h2>
+                        <h3>Enter your birthdate and find out!</h3>
+                    </div>
+
+                    <div id="inputDate">
+                        <select id="month" name="month" />
+                        </select>
+                        <select id="day" name="day" />
+                        </select>
+                        <select id="year" name="year" />
+                        </select>
+                        <br>
+                        <button id="getNews">Go back in time!</button>
+                    </div>
+
+
+                </div>
+
+                <div id="next">
+                    <button id="nextButton">Next birthday</button>
+                </div>
+
+                <div id="dynamicOld"></div>
+
+                <div id="dynamicNews">
+
+                    <div class="spinner">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+
+                    <div id="dynamicTop">
+
+                    </div>
+
+                    <div id="dynamicAll">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="footer">
+                <a href="about.html" target="_self"><h4>About</h4></a>
+                <p>&copy; 2019</p>
+            </div>
+
+        </div>
+
+        <script src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+            <script src="javascript/variables.js"></script>
+            <script src="javascript/input.js"></script>
+            <script src="javascript/collectingNews.js"></script>
+            <script src="javascript/newsPresentation.js"></script>
+            <script src="javascript/renderer.js"></script>
+            <script src="javascript/repository.js"></script>
+
+
+
+    </body>
+
+</html>
